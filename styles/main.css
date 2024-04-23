@@ -304,7 +304,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 4%;
+    padding: 10% 4%;
 }
 
 .services-l {
@@ -406,9 +406,193 @@ ul {
 
 .service-ball-2 {
     position: absolute;
-    top: 106%;
+    top: 110%;
     left: 30%;
     transform: translate(-50%, 54%);
+}
+
+/* About us */
+.about {
+    padding: 20% 4%;
+    background: #000;
+    position: relative;
+}
+
+.about-title {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 127%;
+    text-align: center;
+    color: #fff;
+}
+
+.about-title span {
+    color: #005aee;
+}
+
+.about-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    text-align: center;
+    color: #fff;
+    width: 498px;
+    margin: 220px auto 0 auto;
+}
+
+.about-founder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 158%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #005aee;
+    margin-top: 26px;
+}
+
+.about-circle-small {
+    width: 92px;
+    height: 92px;
+    position: relative;
+}
+
+.about-circle-small .bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 48px;
+    width: 76px;
+    height: 79px;
+    background: linear-gradient(135deg, #005aee 0%, #1d70fa 100%);
+    transform: rotate(15deg);
+}
+
+.about-circle-small .shadow {
+    position: absolute;
+    left: 8px;
+    top: 10px;
+    border-radius: 23px;
+    width: 46px;
+    height: 48px;
+    filter: blur(24px);
+    background: #1a59c2;
+    transform: rotate(15deg);
+}
+
+.about-circle-small .front {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    border-radius: 48px;
+    width: 76px;
+    height: 79px;
+    backdrop-filter: blur(28px);
+    background: linear-gradient(226deg, rgba(0, 90, 238, 0.4) 0%, rgba(0, 90, 238, 0.4) 100%);
+}
+
+.about-circle-small .front svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    fill: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, -50%);
+}
+
+.about-ball-1 {
+    position: absolute;
+    left: 16%;
+    top: 35%;
+}
+
+.about-ball-2 {
+    position: absolute;
+    left: 20%;
+    top: 54%;
+}
+
+.about-ball-3 {
+    position: absolute;
+    left: 16%;
+    top: 72%;
+}
+
+.about-ball-4 {
+    position: absolute;
+    right: 16%;
+    top: 35%;
+}
+
+
+.about-ball-5 {
+    position: absolute;
+    right: 20%;
+    top: 54%;
+}
+
+.about-ball-6 {
+    position: absolute;
+    right: 16%;
+    top: 72%;
+}
+
+.about-big-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -68%);
+}
+
+.about-circle-big {
+    position: relative;
+    width: 140px;
+    height: 140px;
+}
+
+.about-circle-big .bg {
+    border-radius: 58px;
+    width: 115px;
+    height: 119px;
+    background: linear-gradient(135deg, #005aee 0%, #1d70fa 100%);
+    transform: rotate(15deg);
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.about-circle-big .front {
+    border-radius: 57px;
+    width: 114px;
+    backdrop-filter: blur(15px);
+    background: linear-gradient(226deg, rgba(0, 90, 238, 0.4) 0%, rgba(0, 90, 238, 0.4) 100%);
+    height: 119px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.about-circle-big .front .icon {
+    position: relative;
+}
+
+.about-circle-big .front .icon svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    fill: rgba(255, 255, 255, 0.5);
+    transform: translate(-50%, 50%);
+}
+
+.about-shadow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -38%);
+}
+
+.about-shadow svg {
+    border-radius: 100%;
+    fill: linear-gradient(180deg, #005aee 0%, #005aee 52.84%, #005aee 100%);
+    filter: blur(70px);
 }
 
 @media (max-width: 1000px) {
@@ -585,5 +769,23 @@ ul {
 
     .service-ball {
         display: none;
+    }
+
+    /* About Us */
+    .about-text {
+        width: 100%;
+        margin: 30px auto 0 auto;
+    }
+
+    .about-ball {
+        display: none;
+    }
+
+    .about-shadow svg {
+        width: 100%;
+    }
+
+    .about-title {
+        font-size: 30px;
     }
 }

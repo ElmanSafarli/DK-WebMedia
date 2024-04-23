@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         serviceB.forEach((balloon, index) => {
             // Balloon speed is adjusted based on its index to create a parallax effect
-            const balloonScroll = -scrollY * (balloonScrollSpeed + index * 0.16);
+            const balloonScroll = -scrollY * (balloonScrollSpeed + index * 0.4);
             balloon.style.transform = `translateY(${balloonScroll}px)`;
         });
     });
