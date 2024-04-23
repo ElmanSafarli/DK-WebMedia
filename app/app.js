@@ -16,6 +16,7 @@ for (let anchor of anchors) {
 document.addEventListener('DOMContentLoaded', function () {
     const balloons = document.querySelectorAll('.header-ball');
     const serviceB = document.querySelectorAll('.service-ball');
+    const contactB = document.querySelectorAll('.contact-shadow');
 
     const balloonScrollSpeed = 0.08; // Adjust the balloon scroll speed as needed
 
@@ -31,6 +32,12 @@ document.addEventListener('DOMContentLoaded', function () {
         serviceB.forEach((balloon, index) => {
             // Balloon speed is adjusted based on its index to create a parallax effect
             const balloonScroll = -scrollY * (balloonScrollSpeed + index * 0.4);
+            balloon.style.transform = `translateY(${balloonScroll}px)`;
+        });
+
+        contactB.forEach((balloon, index) => {
+            // Balloon speed is adjusted based on its index to create a parallax effect
+            const balloonScroll = -scrollY * (balloonScrollSpeed + index * 0.2);
             balloon.style.transform = `translateY(${balloonScroll}px)`;
         });
     });
