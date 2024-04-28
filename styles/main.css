@@ -672,6 +672,7 @@ ul {
     position: absolute;
     left: -18%;
     top: -6%;
+    z-index: -1;
 }
 
 .contact-shadow-2 {
