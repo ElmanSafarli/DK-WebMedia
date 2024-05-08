@@ -1,4 +1,9 @@
 const anchors = document.querySelectorAll('a[href*="#"]');
+const slider = document.querySelector('.slider');
+const nextButton = document.querySelector('.next-button');
+
+
+
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
@@ -42,3 +47,15 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+if (nextButton) {
+    nextButton.addEventListener('click', () => {
+        const firstSlide = slider.firstElementChild;
+        const cloneSlide = firstSlide.cloneNode(true);
+        slider.removeChild(firstSlide);
+        slider.appendChild(cloneSlide);
+        setTimeout(() => {
+            slider.style.transition = '';
+        }, 50);
+    });
+}
