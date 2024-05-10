@@ -191,7 +191,6 @@ ul {
     background: #000;
     padding: 2% 6%;
     position: relative;
-    width: 100%;
 }
 
 .header-title {
@@ -842,6 +841,10 @@ ul {
     }
 
     /* Hedaer */
+    .header {
+        width: 100%;
+    }
+
     .header-title {
         margin: 90px auto 16px auto;
         font-size: 30px;
