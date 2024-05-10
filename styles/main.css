@@ -841,9 +841,9 @@ ul {
     }
 
     /* Hedaer */
-    .header {
+    /* .header {
         width: 100%;
-    }
+    } */
 
     .header-title {
         margin: 90px auto 16px auto;
@@ -886,10 +886,10 @@ ul {
     }
 
     /* Services */
-    .services-content {
+    /* .services-content {
         width: 100%;
         margin: 6%;
-    }
+    } */
 
     .service-top .title {
         font-size: 26px;
@@ -926,6 +926,10 @@ ul {
     }
 
     /* About Us */
+    /* .about {
+        width: 100%;
+    } */
+
     .about-text {
         width: 100%;
         margin: 30px auto 0 auto;
