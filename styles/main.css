@@ -906,6 +906,16 @@ ul {
         font-size: 14px
     }
 
+    .line-1 {
+        left: 0;
+        top: 11%;
+    }
+
+    .line-2 {
+        right: 0;
+        top: 11%;
+    }
+
     /* About Us */
     .about-text {
         width: 100%;
